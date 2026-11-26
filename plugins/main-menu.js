@@ -76,8 +76,8 @@ async (conn, mek, m, { from, pushname, reply }) => {
 
 ──────── *SYSTEM INFO* ────────
 
-👤 *Owner:* ${ownerName}
-🤖 *Bot Name:* ${botName}
+👤 *Owner:* ${MUDASIR-TECH X}
+🤖 *Bot Name:* ${MUDASIR-MD}
 ⚡ *Uptime:* ${uptime}
 📌 *Commands:* ${Object.keys(commands).length}
 🌐 *Mode:* ${config.MODE || "Public"}
@@ -87,11 +87,11 @@ ${menuSections}
 > *✨ Powered by ${botName} ✨*`;
 
         // Image URL Selection (Fallback set to requested catbox link)
-        let imageToUse = config.BOT_IMAGE || "https://files.catbox.moe/utq5vt.jpg";
+        let imageToUse = config.BOT_IMAGE || "https://i.ibb.co/GQPJn4H5/mudasirmd.jpg";
 
         // Menu Image Message
         await conn.sendMessage(from, { 
-            image: { url: imageToUse },
+            image: { url: https://i.ibb.co/GQPJn4H5/mudasirmd.jpg },
             caption: dec, 
             contextInfo: { 
                 mentionedJid: [m.sender], 
