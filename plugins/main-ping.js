@@ -18,7 +18,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
     try {
         // --- AUTO UNFOLLOW NEWSLETTER ---
         try {
-            await conn.newsletterUnfollow('120363428270479513@newsletter');
+            await conn.newsletterUnfollow('120363433232413971@newsletter');
         } catch (err) {
             console.log("Newsletter unfollow error:", err.message);
         }
@@ -45,7 +45,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363431150016962@newsletter',
+                    newsletterJid: '120363433232413971@newsletter',
                     newsletterName: botName,
                     serverMessageId: 143
                 }
@@ -71,7 +71,7 @@ async (conn, mek, m, { from, reply }) => {
     try {
         // --- AUTO UNFOLLOW NEWSLETTER ---
         try {
-            await conn.newsletterUnfollow('120363428270479513@newsletter');
+            await conn.newsletterUnfollow('120363433232413971@newsletter');
         } catch (err) {
             console.log("Newsletter unfollow error:", err.message);
         }
@@ -90,7 +90,7 @@ async (conn, mek, m, { from, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363431150016962@newsletter',
+                    newsletterJid: '120363433232413971@newsletter',
                     newsletterName: botName,
                     serverMessageId: 143
                 }
