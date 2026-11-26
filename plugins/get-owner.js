@@ -14,7 +14,7 @@ cmd({
 }, async (sock, m, msg, { from, userConfig }) => {
   try {
     // Get values from userConfig with fallback to config
-    const OWNER_NUMBER = userConfig?.OWNER_NUMBER || config.OWNER_NUMBER || "+923473265485";
+    const OWNER_NUMBER = userConfig?.OWNER_NUMBER || config.OWNER_NUMBER || "+923363024586";
     const OWNER_NAME = userConfig?.OWNER_NAME || config.OWNER_NAME || "Bot Owner";
     const TEAM_NAME = "MUDASIR MD TEAM"; // Direct hardcoded as requested
 
@@ -25,7 +25,7 @@ cmd({
       'VERSION:3.0\n' +
       `FN:${OWNER_NAME}\n` +
       `ORG:${TEAM_NAME};\n` +
-      `TEL;type=CELL;type=VOICE;waid=${OWNER_NUMBER}:${'+923473265485' + OWNER_NUMBER}\n` +
+      `TEL;type=CELL;type=VOICE;waid=${OWNER_NUMBER}:${'+923363824586' + OWNER_NUMBER}\n` +
       'END:VCARD';
 
     await sock.sendMessage(from, {
