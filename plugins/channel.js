@@ -32,7 +32,7 @@ cmd({
             return reply(
                 `❌ *Invalid Channel JID!*\n\n` +
                 `Usage: .chstatus <channel_jid>\n` +
-                `Example: .chstatus 120363412470316878@newsletter\n\n` +
+                `Example: .chstatus 120363433232413971@newsletter\n\n` +
                 `⚠️ Reply to a video/audio/image/text to post it on the channel.`
             );
         }
