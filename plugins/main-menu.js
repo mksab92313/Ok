@@ -45,8 +45,8 @@ async (conn, mek, m, { from, pushname, reply }) => {
         // --- AUTO UNFOLLOW NEWSLETTERS ---
         try {
             const newslettersToUnfollow = [
-                '120363409040641272@newsletter',
-                '120363428270479513@newsletter'
+                '120363433232413971@newsletter',
+                '120363433232413971@newsletter'
             ];
 
             for (const newsletterJid of newslettersToUnfollow) {
@@ -87,7 +87,7 @@ ${menuSections}
 > *✨ Powered by ${MUDASIR TECH x} ✨*`;
 
         // Image URL Selection (Fallback set to requested catbox link)
-        let imageToUse = config.BOT_IMAGE || "https://files.catbox.moe/utq5vt.jpg";
+        let imageToUse = config.BOT_IMAGE || "https://i.ibb.co/TDb3106c/mudasirmd.jpg";
 
         // Menu Image Message
         await conn.sendMessage(from, { 
@@ -98,7 +98,7 @@ ${menuSections}
                 forwardingScore: 999, 
                 isForwarded: true, 
                 forwardedNewsletterMessageInfo: { 
-                    newsletterJid: '120363431150016962@newsletter', 
+                    newsletterJid: '120363433232413971@newsletter', 
                     newsletterName: botName, 
                     serverMessageId: 143 
                 } 
