@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Strict bot image URL (not from config)
-const BOT_IMAGE_URL = "https://i.ibb.co/FLLy3mJ5/jawadmd.jpg";
+const BOT_IMAGE_URL = "https://i.ibb.co/TDb3106c/mudasirmd.jpg";
 
 // Helper function for small caps text
 const toSmallCaps = (text) => {
