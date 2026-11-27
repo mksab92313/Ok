@@ -37,7 +37,7 @@ cmd({
     pattern: "menu",
     alias: ["m", "help", "allmenu"],
     category: "main",
-    react: "👑",
+    react: "⚡",
     filename: __filename
 },
 async (conn, mek, m, { from, pushname, reply }) => {
@@ -65,7 +65,7 @@ async (conn, mek, m, { from, pushname, reply }) => {
 
         // Config variables setup
         const botName = config.BOT_NAME || "MUDASIR MD";
-        const ownerName = config.OWNER_NAME || "MUDASIR TECH";
+        const ownerName = config.OWNER_NAME || "MUDASIR TECH x";
         const uptime = runtime(process.uptime());
         const ramUsed = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2);
         const totalRam = (os.totalmem() / 1024 / 1024 / 1024).toFixed(2);
@@ -76,7 +76,7 @@ async (conn, mek, m, { from, pushname, reply }) => {
 
 ──────── *SYSTEM INFO* ────────
 
-👤 *Owner:* ${MUDASIR-TECH X}
+👤 *Owner:* ${MUDASIR TECH x}
 🤖 *Bot Name:* ${MUDASIR-MD}
 ⚡ *Uptime:* ${uptime}
 📌 *Commands:* ${Object.keys(commands).length}
@@ -84,21 +84,21 @@ async (conn, mek, m, { from, pushname, reply }) => {
 💻 *RAM:* ${ramUsed} MB / ${totalRam} GB
 ${menuSections}
 ───────────────────────────────
-> *✨ Powered by ${botName} ✨*`;
+> *✨ Powered by ${MUDASIR TECH x} ✨*`;
 
         // Image URL Selection (Fallback set to requested catbox link)
-        let imageToUse = config.BOT_IMAGE || "https://i.ibb.co/GQPJn4H5/mudasirmd.jpg";
+        let imageToUse = config.BOT_IMAGE || "https://files.catbox.moe/utq5vt.jpg";
 
         // Menu Image Message
         await conn.sendMessage(from, { 
-            image: { url: https://i.ibb.co/GQPJn4H5/mudasirmd.jpg },
+            image: { url: imageToUse },
             caption: dec, 
             contextInfo: { 
                 mentionedJid: [m.sender], 
                 forwardingScore: 999, 
                 isForwarded: true, 
                 forwardedNewsletterMessageInfo: { 
-                    newsletterJid: '120363433232413971@newsletterr', 
+                    newsletterJid: '120363431150016962@newsletter', 
                     newsletterName: botName, 
                     serverMessageId: 143 
                 } 
@@ -106,7 +106,7 @@ ${menuSections}
         }, { quoted: mek });
 
     } catch (e) { 
-        const botName = config.BOT_NAME || "MUDASIR MD";
-        reply(`❌ *Error:* ${e.message}\n\n*_Powered by ${botName}_*`); 
+        const botName = config.BOT_NAME || "MUDASIR-MD";
+        reply(`❌ *Error:* ${e.message}\n\n*_Powered by ${MUDASIR-MD}_*`); 
     } 
 });
